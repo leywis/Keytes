@@ -5,6 +5,9 @@
       <cube-input v-model="loginInfo.userName" class="input-item" :placeholder="'请输入用户名'"></cube-input>
       <cube-input v-model="loginInfo.password" class="input-item" :placeholder="'请输入密码'"></cube-input>
       <cube-button :primary="true" class="login-btn">登录</cube-button>
+      <cube-input v-model="loginInfo.userName" class="input-item" :placeholder="'请输入用户名'"></cube-input>
+      <cube-input v-model="loginInfo.password" class="input-item" :placeholder="'请输入密码'"></cube-input>
+      <cube-button :primary="true" class="login-btn">登录</cube-button>
       <cube-button :outline="true">Outline Button</cube-button>
     </div>
   </div>
@@ -12,7 +15,7 @@
 
 <script>
 export default {
-  name: "Login",
+  name: "Register",
   props: {
     msg: String
   },
