@@ -1,5 +1,8 @@
 @require "~cube-ui/src/common/stylus/var/color.styl"
 
+// 主题色
+$keytes-base=#409EFF
+
 
 // action-sheet
 $action-sheet-color := $color-grey
@@ -16,9 +19,8 @@ $action-sheet-picker-cancel-active-color := $color-light-grey-s
 
 // button
 $btn-color := $color-white
-$btn-bgc := blue
-// $btn-bdc := $color-regular-blue
-$btn-bdc := blue
+$btn-bgc := $color-regular-blue
+$btn-bdc := $color-regular-blue
 $btn-active-bgc := $color-blue
 $btn-active-bdc := $color-blue
 $btn-disabled-color := $color-white
@@ -164,8 +166,9 @@ $switch-off-border-color := #e4e4e4
 // input
 $input-color := $color-grey
 $input-bgc := $color-white
-$input-border-color := $color-row-line
-$input-focus-border-color := $color-orange
+$input-border-color := #ccc // $color-row-line
+// 获取焦点的border颜色
+$input-focus-border-color := $keytes-base // $color-orange
 $input-placeholder-color := $color-light-grey-s
 $input-clear-icon-color := $color-light-grey
 
