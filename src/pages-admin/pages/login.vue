@@ -1,7 +1,9 @@
 <template>
   <div class="login-bg">
     <div class="login-wrap">
-      <div class="logo"></div>
+      <div class="logo-header">
+        <div class="logo"></div>
+      </div>
       <cube-input v-model="loginInfo.userName" class="input-item" :placeholder="'请输入用户名'"></cube-input>
       <cube-input v-model="loginInfo.password" class="input-item" :placeholder="'请输入密码'"></cube-input>
       <cube-button :primary="true" class="login-btn">登录</cube-button>
@@ -28,6 +30,13 @@ export default {
 </script>
 
 <style scoped>
+.logo-header{
+  width: 100%;
+  height: 2.6rem;
+  background-color: aquamarine;
+  border-radius: 0 0 50% 50%;
+  position: relative;
+}
 .logo {
   width: 2rem;
   height: 2rem;
@@ -42,10 +51,10 @@ export default {
   position: fixed;
   width: 100%;
 }
-.login-wrap {
+/* .login-wrap {
   margin: 0.6rem auto 0;
   padding: 0 0.4rem;
-}
+} */
 .login-btn {
   margin: 0.8rem auto 0.2rem;
 }
