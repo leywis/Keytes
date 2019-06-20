@@ -6,13 +6,11 @@
 </template>
 
 <script>
-import Login from "./pages-admin/pages/login";
+// import Login from "./pages-admin/pages/login";
 
 export default {
   name: "app",
-  components: {
-    Login
-  }
+  components: {}
 };
 </script>
 
